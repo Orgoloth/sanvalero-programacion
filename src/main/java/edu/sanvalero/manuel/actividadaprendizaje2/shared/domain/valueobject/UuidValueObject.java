@@ -2,11 +2,11 @@ package edu.sanvalero.manuel.actividadaprendizaje2.shared.domain.valueobject;
 
 import java.util.UUID;
 
-public abstract class Uuid {
+public abstract class UuidValueObject {
     private UUID uuid;
 
-    public Uuid(UUID uuid) {
-        this.uuid = uuid;
+    public UuidValueObject(UUID value) {
+        this.uuid = value;
     }
 
     public static UUID random() {
@@ -33,7 +33,7 @@ public abstract class Uuid {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Uuid other = (Uuid) obj;
+        UuidValueObject other = (UuidValueObject) obj;
         if (value() == null) {
             if (other.value() != null)
                 return false;
@@ -41,5 +41,4 @@ public abstract class Uuid {
             return false;
         return true;
     }
-
 }
