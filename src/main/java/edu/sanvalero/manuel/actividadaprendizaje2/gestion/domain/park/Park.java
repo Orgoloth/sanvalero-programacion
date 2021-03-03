@@ -1,29 +1,23 @@
 package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.park;
 
 public class Park {
+    private ParkId id;
     private ParkName name;
     private ParkExtension extension;
     private ParkState state;
     private ParkCity city;
 
-    public Park(ParkName parkName, ParkExtension parkExtension, ParkState parkState, ParkCity parkCity) {
+    public Park(ParkId parkId, ParkName parkName, ParkExtension parkExtension, ParkState parkState, ParkCity parkCity) {
+        this.id = parkId;
         this.name = parkName;
         this.extension = parkExtension;
         this.state = parkState;
         this.city = parkCity;
     }
 
-    /**
-     * Named constructor
-     * 
-     * @param parkName
-     * @param parkExtension
-     * @param parkState
-     * @param parkCity
-     * @return
-     */
-    public static Park create(ParkName parkName, ParkExtension parkExtension, ParkState parkState, ParkCity parkCity) {
-        return new Park(parkName, parkExtension, parkState, parkCity);
+    public static Park create(ParkId parkId, ParkName parkName, ParkExtension parkExtension, ParkState parkState,
+            ParkCity parkCity) {
+        return new Park(parkId, parkName, parkExtension, parkState, parkCity);
     }
 
     public void updateName(ParkName newName) {
@@ -36,6 +30,10 @@ public class Park {
 
     public void updateState(ParkState newState) {
         state = newState;
+    }
+
+    public ParkId getId() {
+        return id;
     }
 
     public ParkName getName() {
@@ -53,6 +51,5 @@ public class Park {
     public ParkCity getCity() {
         return city;
     }
-
 
 }
