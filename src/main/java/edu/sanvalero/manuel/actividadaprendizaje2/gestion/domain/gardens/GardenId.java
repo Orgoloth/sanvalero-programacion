@@ -1,4 +1,4 @@
-package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.garden;
+package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.gardens;
 
 import java.util.UUID;
 
