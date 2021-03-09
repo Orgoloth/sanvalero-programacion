@@ -1,4 +1,4 @@
-package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.gardens;
+package edu.sanvalero.manuel.actividadaprendizaje2.gestion.gardens.domain;
 
 import edu.sanvalero.manuel.actividadaprendizaje2.shared.domain.valueobject.IntValueObject;
 

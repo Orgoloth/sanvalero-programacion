@@ -1,6 +1,6 @@
-package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.gardens;
+package edu.sanvalero.manuel.actividadaprendizaje2.gestion.gardens.domain;
 
-import edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.cities.City;
+import edu.sanvalero.manuel.actividadaprendizaje2.gestion.cities.domain.City;
 
 public class Garden {
     private GardenId id;

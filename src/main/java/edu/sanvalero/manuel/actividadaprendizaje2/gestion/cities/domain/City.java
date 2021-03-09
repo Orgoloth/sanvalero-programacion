@@ -1,6 +1,6 @@
-package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.cities;
+package edu.sanvalero.manuel.actividadaprendizaje2.gestion.cities.domain;
 
-public class City {
+public final class City {
     private CityId id;
     private CityName name;
     private CityRegion region;

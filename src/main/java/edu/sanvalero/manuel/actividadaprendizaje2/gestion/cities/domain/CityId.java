@@ -1,4 +1,4 @@
-package edu.sanvalero.manuel.actividadaprendizaje2.gestion.domain.cities;
+package edu.sanvalero.manuel.actividadaprendizaje2.gestion.cities.domain;
 
 import java.util.UUID;
 
